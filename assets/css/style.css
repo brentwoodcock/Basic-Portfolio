@@ -21,10 +21,10 @@ body {
 }
 .footer, .push {
 	height: 6em;
+	clear: both;
 }
 .footer {
 	overflow: auto;
-	clear: both;
 	background-color: #666;
 	height: 102px;
 	border: solid;
@@ -55,7 +55,7 @@ h1 {
 	height: 90px;
 	font-size: 30px;
 	float: left;
-	padding: 30px;
+	padding: 30px 34px;
 }
 .container{
 	width: 960px;
@@ -68,13 +68,19 @@ h1 {
 	padding-top: 32px;
 	font-size: 18px;
 }
-a {
+#about,
+#portfolio,
+#contact {
 	text-decoration: none;
 }
-a:link, a:visited{
+#about:link, #about:visited,
+#portfolio:link, #portfolio:visited,
+#contact:link, #contact:visited {
 	color: #999;
 }
-a:hover, a:active{
+#about:hover, #about:active,
+#portfolio:hover, #portfolio:active,
+#contact:hover, #contact:active{
 	color: #fff;
 	background-color: #4aaaa5;
 	height: 90px;
@@ -114,17 +120,75 @@ h2 {
 	border: solid;
 	border-width: 0px 0px 3px 0px;
 	border-color: #ddd;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 #profile-image {
 	float: left;
-	padding: 0px 26px 26px 0px;
+	padding: 15px 26px 26px 0px;
 }
 p {
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 2;
-	margin-top: -11px;
+	line-height: 1.9;
+	margin-top: 20px;
+}
+.img-holder {
+	position: relative;
+	float: left;
+}
+.right {
+	float: right;
+}
+.project-img {
+	margin: 25px 0;
+}
+.img-holder .link {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+}
+.link {
+	padding: 20px;
+	width: 275px;
+	background-color: #4aaaa5;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	font-weight: lighter;
+}
+form {
+	font-size: 18px;
+	padding-top: 13px;
+}
+input[type=text] {
+	width: 100%;
+	padding: 10px 10px;
+	margin: 8px 0px 16px 0px;
+	color: #bbb;
+	border: solid;
+	border-width: 1px;
+	border-color: #ddd;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 10px 10px;
+	margin: 8px 0;
+	resize: none;
+	border: solid;
+	border-width: 1px;
+	border-color: #ccc;
+}
+input[type=submit] {
+	text-decoration: none;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	padding: 10px 32px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 #sidebar {
 	width: 270px;
